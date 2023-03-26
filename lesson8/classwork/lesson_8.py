@@ -89,4 +89,3 @@
 # print(delimiter)
 # print("|{:<62}|{:>15}|".format(' Total:', total_sum))
 # print(delimiter)
-
