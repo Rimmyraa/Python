@@ -13,3 +13,5 @@ while True:
 
 file.write(name)
 file.close()
+
+# не выходит записать имя в файл, записываеться только q
