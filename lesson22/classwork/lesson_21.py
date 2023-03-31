@@ -61,14 +61,14 @@
 
 # ------------------------------------------------
 
-# file = open('D://python//learning//Schoology//lesson21//classwork//test.txt', 'w')
+# file = open('D://python//learning//Schoology//lesson22//classwork//test.txt', 'w')
 # simbols_written = file.write('hello!')
 # print(simbols_written)
 # file.close()
 
 # ------------------------------------------------
 
-# file = open('D://python//learning//Schoology//lesson21//classwork//test.txt', 'w+')
+# file = open('D://python//learning//Schoology//lesson22//classwork//test.txt', 'w+')
 # file.write('heljhjho!')
 # file.seek(0)   #seek - на первую букву курсор
 # first_two_symbols = file.read(2)
@@ -77,22 +77,22 @@
 
 # ------------------------------------------------
 
-# file = open('D://python//learning//Schoology//lesson21//classwork//test.txt', 'w')
+# file = open('D://python//learning//Schoology//lesson22//classwork//test.txt', 'w')
 # file.write('Hello!\nWorld!')
 # file.close()
 #
-# file = open('D://python//learning//Schoology//lesson21//classwork//test.txt', 'r')
+# file = open('D://python//learning//Schoology//lesson22//classwork//test.txt', 'r')
 # all_file = file.read()
 # print(all_file)
 # file.close()
 
 # ------------------------------------------------
 
-file = open('D://python//learning//Schoology//lesson21//classwork//test.txt', 'w')
+file = open('/Schoology/lesson22//classwork//test.txt', 'w')
 file.write('Hello!\nWorld!')
 file.close()
 
-file = open('D://python//learning//Schoology//lesson21//classwork//test.txt', 'r')
+file = open('/Schoology/lesson22//classwork//test.txt', 'r')
 while True:
     symbol = file.read(1)
     if len(symbol) == 0:
