@@ -88,11 +88,11 @@
 
 # ------------------------------------------------
 
-file = open('/Schoology/lesson22//classwork//test.txt', 'w')
+file = open('D:/python/learning/Schoology/lesson23/classwork/text', 'w')
 file.write('Hello!\nWorld!')
 file.close()
 
-file = open('/Schoology/lesson22//classwork//test.txt', 'r')
+file = open('D:/python/learning/Schoology/lesson23/classwork/text', 'r')
 while True:
     symbol = file.read(1)
     if len(symbol) == 0:
