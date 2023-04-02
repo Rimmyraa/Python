@@ -9,9 +9,8 @@ while True:
     if name == 'q':
         break
     else:
-        print(name)
+        file.write(f'{name}')
 
-file.write(name)
 file.close()
 
 # не выходит записать имя в файл, записываеться только q
