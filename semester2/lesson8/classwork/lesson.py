@@ -21,4 +21,4 @@ for faculties in soup.select_one('.b-references'):
 # soup = BeautifulSoup(response.content , "html.parser") 
  
 # for title in soup.select('.wikitable > tbody > tr > td > b'): 
-#     print(title.text) 
+#     print(title.text)   
