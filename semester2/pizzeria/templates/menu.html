@@ -2,35 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Меню</title>
+    <title>Pizzeria</title>
+    <link rel = 'stylesheet' href="/static/style.css"></link>
 </head>
 <body>
-    <h1>Меню</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Назва</th>
-                <th>Опис інгредієнтів</th>
-                <th>Ціна</th>
-            </tr>
-        </thead>
-        <tbody>
-                <tr>
-                    <td>Піца Куряча</td>
-                    <td>Курка в соусі «Теріякі», кукурудза, кунжут, сир Моцарела, спеції, білий соус</td>
-                    <td>225₴</td>
-                </tr>
-                <tr>
-                    <td>Піца Чізбургер</td>
-                    <td>Бургерний соус, яловичий фарш, сир Моцарела, сир Чеддер, цибуля ріпчаста, огірок солоний, цибуля "Фрі", кунжут та орегано</td>
-                    <td>260₴</td>
-                </tr>
-                <tr>
-                    <td>Піца Філадельфія</td>
-                    <td>Cир Моцарела, лосось, вершковий сир, вершки, піца соус, кунжут, спеці</td>
-                    <td>310₴</td>
-                </tr>
-        </tbody>
-    </table>
+{% for dish in dishes|sort(attribute='price') %}
+{% for dish in dishes %}
+    <b>{{dish.dish}}: </b> {{dish.price}}<br>
+    {% endfor %}
+</ul>
+
+  </div>
+</div>
 </body>
 </html>
