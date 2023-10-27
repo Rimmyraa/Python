@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oderman`s menu</title>
+
+</head>
+<body>
+
+<div class="menu">
+  <a class="active" href="/">Main page</a>
+  <a href="/menu">Menu</a>
+  <a href="/add_pizza">Add dish</a>
+</div>
+
+<h1>{{title_1}}</h1>
+<table>
+    <thead>
+    <tr>
+
+        <th>Name</th>
+        <th>Description of ingredients</th>
+        <th>Pizza`s price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for participant in data %}
+    <tr>
+
+        <td>{{ participant[0] }}</td>
+        <td>{{ participant[1] }}</td>
+        <td>{{ participant[2] }}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
