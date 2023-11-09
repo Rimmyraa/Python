@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title1}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+
+<div class="menu">
+    <a class="active" href="/">Main page</a>
+    <a href="/menu">Menu</a>
+    <a href="/add_pizza">Add dish</a>
+    <a class="weather-text">Weather in Ukraine: {{ current_weather.main.temp }}°C</a>
+</div>
+</body>
+</html>
