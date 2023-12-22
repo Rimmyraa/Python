@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iGGtE1lWofQF5R5O4IVWoSkJC+5g4nSkzUuZvmve8B+YBpDjZ9aLJ7Nqj" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='miami.jpg') }}"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Miami</h5>
+                        <p class="card-text">Miami is an international city on the southeastern tip of Florida</p>
+                        <a href="#" class="btn btn-primary">Book now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='san_giego.jpg') }}">
+                    <div class="card-body">
+                        <h5 class="card-title">San Diego</h5>
+                        <p class="card-text">San Diego is a city on California's Pacific coast near the Mexican border that is famous for its beaches and parks.</p>
+                        <a href="#" class="btn btn-primary">Book now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-oJSkEtzxQzO9CC5apTEk2P5spC2Jy3UOihD4H9ePdIvfe8VmZ2u8TM6CAw9M/pq" crossorigin="anonymous"></script>
+</body>
+</html>

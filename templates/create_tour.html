@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create tour</title>
+</head>
+<body>
+    <h1>There you can create your own tour</h1>
+
+    <form method="post" action="{{ url_for('create_tour') }}">
+
+        <label for="place">Place:</label>
+        <input type="text" name="destination" required><br>
+
+        <label for="duration">Duration (days):</label>
+        <input type="number" name="duration" required><br>
+
+        <label for="description">Description:</label><br>
+        <textarea name="description" rows="1" required></textarea><br>
+
+        <input type="submit" value="Create">
+    </form>
+
+    <p><a href="{{ url_for('home') }}">Come back to the main page</a></p>
+
+</body>
+</html>

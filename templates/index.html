@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Those site about travels and journey</h1>
+    <p>There are any examples for your choice</p>
+
+       {% include 'main.html' %}
+
+    <h2>Create your tour</h2>
+    <form action="{{ url_for('create_tour') }}">
+        <input type="submit" value="Create tour">
+    </form>
+
+</body>
+</html>
